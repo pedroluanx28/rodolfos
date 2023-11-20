@@ -1,0 +1,143 @@
+.backdrop {
+    background-image: url('/backdrop.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+
+    .input-search {
+        border-radius: 7px 0 0 7px;
+        border: none;
+        padding: 11px 20px;
+        width: 720px;
+    }
+
+    .input-search:focus {
+        outline: none;
+    }
+
+    .input-search::placeholder {
+        font-weight: 600;
+        color: #BABABA;
+    }
+
+    .button-search {
+        border-radius: 0 7px 7px 0;
+        border: none;
+        padding: 0 20px;
+        font-size: 1.3em;
+        color: white;
+        background-color: #10AC70;
+        transition: 300ms;
+    }
+
+    .button-search:hover {
+        background-color: #037348;
+    }
+
+    .button-kart {
+        background-color: transparent;
+        color: #ffffff;
+        font-size: 30px;
+        padding: 4px 12px;
+        border-radius: 50%;
+        margin-left: 5px;
+        border: none;
+        transition: 300ms;
+    }
+
+    .button-kart:hover {
+        background-color: #ffffff1e;
+    }
+}
+
+.label-p {
+    color: #0F5439;
+    font-weight: 600;
+}
+
+.label-p::before {
+    content: ".";
+    background-color: #0F5439;
+    border-radius: 2px;
+    padding: 0 4px;
+    height: 100%;
+    margin-right: 8px;
+}
+
+.see-products {
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 24px;
+}
+
+.see-more {
+    background-color: #0F5439;
+    color: #ffffff;
+    border: none;
+    margin: 35px 0;
+    border-radius: 3px;
+    padding: 10px 30px;
+    transition: 300ms;
+}
+
+.see-more:hover {
+    background-color: #0d4630;
+}
+
+.news {
+    display: flex;
+    padding: 56px 100px 40px 56px;
+    background-image: linear-gradient(to top, #002919, #106846);
+    color: white !important;
+}
+
+.img-news {
+    box-shadow:  0px 0px 25px #ffffff9c;
+}
+
+.icon-img {
+    width: 77px;
+    margin: 0 auto 15px auto ;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fs-xlg {
+    font-size: 7rem;
+}
+
+.fs-md {
+    font-size: 1.5rem;
+}
+
+.fs-sm {
+    font-size: 14px;
+}
+
+.mb-lg {
+    margin-bottom: 230px !important;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
+
+.flex-3 {
+    flex: 3;
+}
