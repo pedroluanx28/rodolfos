@@ -44,20 +44,11 @@
             color: #BABABA;
         }
 
-        .icon-sm {
-            margin: 5px 0 5px 10px !important;
-        }
-
-        .input-lg {
+        .input {
             padding: 11px 10px 11px 40px;
         }
 
-        .input-sm {
-            padding: 5px 5px 5px 30px;
-            width: 98% !important;
-        }
-
-        .register-button {
+        .login-button {
             background-color: #10AC70;
             color: #ffffff;
             padding: 15px 0;
@@ -66,25 +57,7 @@
             width: 100%;
         }
 
-        .error {
-            color: #ff0000;
-            font-size: 12px;
-            text-align: left;
-        }
-
-        .error-input {
-            border: 1px solid #ff00008f;
-            color: #ff00008f !important;
-        }
-        .error-input::placeholder {
-            color: #ff000079;
-        }
-
-        .icon-error {
-            color: #ff00008f;
-        }
-
-        .has-account {
+        .hasnt-account {
             color: #0F5439;
             font-weight: 500;
 
