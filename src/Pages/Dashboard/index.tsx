@@ -1,10 +1,16 @@
 import { IoSearch } from "react-icons/io5";
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { Link } from 'react-router-dom';
 import { Card } from "../../Components/Card";
 import { LuShoppingCart } from "react-icons/lu";
 import { Category } from "../../Components/Category";
+import { A11y, Navigation, Pagination, Autoplay,EffectCreative } from "swiper/modules";
+
 
 import './styles.scss';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 export function Dashboard() {
     return (
@@ -143,19 +149,67 @@ export function Dashboard() {
                         <p className="label-p">Novidades</p>
                         <h2 className="see-products">Novidades que chegaram pra você</h2>
 
-                        <div className="news mb-5">
-                            <div className="d-flex flex-column align-items-start flex-3">
-                                <h2>Cadeira Gamer branca Prizi - Jx-1039r</h2>
-                                <h2>R$ 390 á vista</h2>
-                                <h2>4x de R$ 89,99 sem juros</h2>
-                                <p>Melhore sua experiencia gamer</p>
-                                <button className="see-more">Comprar agora</button>
-                            </div>
+                        <Swiper
+                            modules={[Navigation, Pagination, A11y, Autoplay,EffectCreative]}
+                            spaceBetween={50}
+                            autoplay={{
+                                delay: 4000,
+                                disableOnInteraction: false
+                            }}
+                            pagination={{
+                                clickable: true,
+                                dynamicBullets: true,
+                            }}
+                            loop={true}
+                            navigation={true}
+                            grabCursor={true}
+                            effect={'creative'}
+                            creativeEffect={{
+                              prev: {
+                                shadow: true,
+                                translate: [0, 0, -400],
+                              },
+                              next: {
+                                translate: ['100%', 0, 0],
+                              },
+                            }}
+                            onSlideChange={() => console.log('slide change')}
+                            onSwiper={(swiper) => console.log(swiper)}
+                        >
 
-                            <div className="d-flex flex-1">
-                                <img src="/news.jpeg" className="w-100 img-news" />
-                            </div>
-                        </div>
+                            <SwiperSlide>
+                                <div className="news mb-5 d-flex align-items-center">
+                                    <div className="d-flex flex-column align-items-start flex-3">
+                                        <h2>Cadeira Gamer branca Prizi - Jx-1039r</h2>
+                                        <h2>R$ 390 á vista</h2>
+                                        <h2>4x de R$ 89,99 sem juros</h2>
+                                        <p>Melhore sua experiencia gamer</p>
+                                        <button className="see-more">Comprar agora</button>
+                                    </div>
+
+                                    <div className="d-flex flex-1">
+                                        <img src="https://www.imagensempng.com.br/wp-content/uploads/2021/10/410-2.png" className="w-100 img-news" />
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+
+                            <SwiperSlide>
+                                <div className="news mb-5">
+                                    <div className="d-flex flex-column align-items-start flex-3">
+                                        <h2>Cadeira Gamer branca Prizi - Jx-1039r</h2>
+                                        <h2>R$ 390 á vista</h2>
+                                        <h2>4x de R$ 89,99 sem juros</h2>
+                                        <p>Melhore sua experiencia gamer</p>
+                                        <button className="see-more">Comprar agora</button>
+                                    </div>
+
+                                    <div className="d-flex flex-1">
+                                        <img src="/news.jpeg" className="w-100 img-news" />
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+
+                        </Swiper>
 
                         <div>
                             <p className="label-p">Destaques</p>

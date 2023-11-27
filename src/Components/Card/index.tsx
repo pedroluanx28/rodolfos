@@ -1,4 +1,5 @@
 import { LuShoppingCart } from "react-icons/lu";
+import { Link } from "react-router-dom";
 import './styles.scss';
 
 type CardProps = {
@@ -22,13 +23,15 @@ export function Card({
         <div className={`col-${col} transition card-product`}>
             {(discount != 0) && <div className="discount">{`-${discount}%`}</div>}
             <div className="card-container mb-3">
-                <div className="card-content">
-                    <img
-                        src={image}
-                        alt="Imagen do produto"
-                        className="w-100 h-100 product-img"
-                    />
-                </div>
+                <Link to="kart/1">
+                    <div className="card-content">
+                        <img
+                            src={image}
+                            alt="Imagen do produto"
+                            className="w-100 h-100 product-img"
+                        />
+                    </div>
+                </Link>
                 <button className="add-kart-button">
                     <span className="kart-img">
                         <LuShoppingCart />
