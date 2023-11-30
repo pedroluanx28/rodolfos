@@ -1,0 +1,22 @@
+.button {
+    padding: 10px;
+}
+
+.goto-payment {
+    border-radius: 5px;
+    color: #FFFFFF;
+    background-color: #0F5439;
+}
+
+.continue {
+    border-radius: 5px;
+    color: #0F5439;
+    border: 2px solid #002919;
+    background-color: #FFFFFF;
+    font-weight: 600;
+}
+
+.continue:hover {
+    background-color: #FFFFFF;
+    color: #0F5439;
+}
