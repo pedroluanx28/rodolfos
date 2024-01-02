@@ -23,7 +23,7 @@ export function Card({
         <div className={`col-${col} transition card-product`}>
             {(discount != 0) && <div className="discount">{`-${discount}%`}</div>}
             <div className="card-container mb-3">
-                <Link to="kart/1">
+                <Link to="product/1">
                     <div className="card-content">
                         <img
                             src={image}

@@ -12,7 +12,7 @@ export function KartCard() {
                 <span>Poltrona no talo</span>
                 <span>R$ 650</span>
                 <Col lg={1}>
-                    <input type="number" className="form-control" />
+                    <input type="number" className="form-control" value={1} />
                 </Col>
                 <span className="fw-bold color-price-total">R$ 650</span>
                 <Button variant="danger" className="px-3 py-2"><FaRegTrashAlt /></Button>

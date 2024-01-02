@@ -48,7 +48,7 @@ export function Kart() {
                                 <div className="d-flex justify-content-between p-3">
                                     <span>Valor total</span>
                                     <span className="color-price-total fw-bold">R$ 1750,00</span>
-                                </div>
+                                </div>                                                                                                                                                                                                               
 
                                 <div className="d-flex justify-content-between p-3">
                                     <span>Frete</span>
